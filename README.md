@@ -8,6 +8,35 @@ Build with these:
 
 Using: PHP 8.2.12
 
+Features:
+
+Customer Side (customerSide Folder):
+  -Reservation Management:
+    Make reservations for products or services.
+  -Account Registration:
+    Register for accounts to access personalized features.
+  -Profile Management
+    View and manage profile points and preferences.
+
+Staff Side (adminSide Folder):
+  -Order Management:
+    Take customer orders efficiently.
+  -Kitchen Communication:
+    Send orders directly to the kitchen for processing.
+  -Payment Processing:
+    Process payments securely.
+  -Receipt Printing:
+    Print receipts for customer transactions.
+  -CRUD Operations:
+    Manage Create, Read, Update, and Delete operations for products and orders.
+  -User Preferences:
+    View and manage user preferences for improved service.
+  -Reporting:
+    Download detailed reports for analysis.
+  -Data Visualization:
+    View charts and graphs to analyze performance metrics.
+
+
 
 
 
