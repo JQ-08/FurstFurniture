@@ -12,51 +12,56 @@ Features:
 
 Customer Side (customerSide Folder):
 
-  -Reservation Management:
+•	Reservation Management:
+
+  o	Make reservations for products or services.
   
-  Make reservations for products or services.
-    
-  -Account Registration:
+•	Account Registration:
+
+  o	Register for accounts to access personalized features.
   
-  Register for accounts to access personalized features.
-    
-  -Profile Management
+•	Profile Management:
+
+  o	View and manage profile points and preferences.
   
-  View and manage profile points and preferences.
+________________________________________
 
 Staff Side (adminSide Folder):
 
-  -Order Management:
+•	Order Management:
+
+  o	Take customer orders efficiently.
+
+•	Kitchen Communication:
+
+  o	Send orders directly to the kitchen for processing.
   
-  Take customer orders efficiently.
-    
-  -Kitchen Communication:
+•	Payment Processing:
+
+  o	Process payments securely.
   
-  Send orders directly to the kitchen for processing.
-    
-  -Payment Processing:
+•	Receipt Printing:
+
+  o	Print receipts for customer transactions.
   
-  Process payments securely.
-    
-  -Receipt Printing:
+•	CRUD Operations:
+
+  o	Manage Create, Read, Update, and Delete operations for products and orders.
   
-  Print receipts for customer transactions.
-    
-  -CRUD Operations:
+•	User Preferences:
+
+  o	View and manage user preferences for improved service.
   
-  Manage Create, Read, Update, and Delete operations for products and orders.
-    
-  -User Preferences:
+•	Reporting:
+
+  o	Download detailed reports for analysis.
   
-  View and manage user preferences for improved service.
-    
-  -Reporting:
+•	Data Visualization:
+
+  o	View charts and graphs to analyze performance metrics.
   
-  Download detailed reports for analysis.
-    
-  -Data Visualization:
-  
-  View charts and graphs to analyze performance metrics.
+
+
 
 
 
