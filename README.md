@@ -14,49 +14,49 @@ Customer Side (customerSide Folder):
 
   -Reservation Management:
   
-    Make reservations for products or services.
+  Make reservations for products or services.
     
   -Account Registration:
   
-    Register for accounts to access personalized features.
+  Register for accounts to access personalized features.
     
   -Profile Management
   
-    View and manage profile points and preferences.
+  View and manage profile points and preferences.
 
 Staff Side (adminSide Folder):
 
   -Order Management:
   
-    Take customer orders efficiently.
+  Take customer orders efficiently.
     
   -Kitchen Communication:
   
-    Send orders directly to the kitchen for processing.
+  Send orders directly to the kitchen for processing.
     
   -Payment Processing:
   
-    Process payments securely.
+  Process payments securely.
     
   -Receipt Printing:
   
-    Print receipts for customer transactions.
+  Print receipts for customer transactions.
     
   -CRUD Operations:
   
-    Manage Create, Read, Update, and Delete operations for products and orders.
+  Manage Create, Read, Update, and Delete operations for products and orders.
     
   -User Preferences:
   
-    View and manage user preferences for improved service.
+  View and manage user preferences for improved service.
     
   -Reporting:
   
-    Download detailed reports for analysis.
+  Download detailed reports for analysis.
     
   -Data Visualization:
   
-    View charts and graphs to analyze performance metrics.
+  View charts and graphs to analyze performance metrics.
 
 
 
