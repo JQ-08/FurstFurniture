@@ -26,7 +26,7 @@ if (isset($_POST['addproductbtn'])) {
     // Handle Image uploads
     $imageFiles = ['image1', 'image2', 'image3', 'image4'];
     $renamedImages = [];
-    $targetDir = __DIR__ . '/../../../images/product/';
+    $targetDir = __DIR__ . '/../../../images/products/';
 
     // Create the target directory if it does not exist
     if (!is_dir($targetDir)) {
@@ -93,7 +93,7 @@ if (isset($_POST['editproductbtn'])) {
     $stmt->close();
 
     // Define the target directory relative to this script's location
-    $targetDir = __DIR__ . '/../../../images/product/';
+    $targetDir = __DIR__ . '/../../../images/products/';
 
     // Create the target directory if it does not exist
     if (!is_dir($targetDir)) {
