@@ -332,7 +332,7 @@ if (!$result) {
 			}
 
 			if (confirm('Are you sure you want to delete the selected orders?')) {
-				fetch('includes/delete.php', {
+				fetch('includes/delete_orders.php', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'
