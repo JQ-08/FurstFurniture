@@ -173,6 +173,7 @@ ob_end_flush();
                         </div>
                     </div>
                     <input type="submit" value="Continue" name="continue" class="continue-btn">
+                    <a href="shopping_cart.php" class="continue-btn" style="margin-top: 10px; text-decoration: none;">Back to Shopping Cart</a>
                 <?php else: ?>
                     <h3 class="title">Shipping Details</h3>
                     <div class="flex">
