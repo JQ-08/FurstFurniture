@@ -92,6 +92,14 @@ if (isset($_POST['editproductbtn'])) {
     $currentImages = $result->fetch_assoc();
     $stmt->close();
 
+    // Define the target directory relative to this script's location
+    $targetDir = __DIR__ . '/../../../images/product/';
+
+    // Create the target directory if it does not exist
+    if (!is_dir($targetDir)) {
+        mkdir($targetDir, 0777, true);
+    }
+
     // Handle image upload
     $imageFields = ['image1', 'image2', 'image3', 'image4'];
     $imageNames = [];
@@ -101,8 +109,9 @@ if (isset($_POST['editproductbtn'])) {
             $image = $_FILES[$field]['name'];
             $ext = pathinfo($image, PATHINFO_EXTENSION);
             $rename = create_unique_id() . '.' . $ext;
-            $targetFile = 'C:/xampp/htdocs/PISF/images/products/' . $rename;
+            $targetFile = $targetDir . $rename;
 
+            // Move uploaded file
             if (move_uploaded_file($_FILES[$field]['tmp_name'], $targetFile)) {
                 $imageNames[$field] = $rename;
             } else {
@@ -115,6 +124,7 @@ if (isset($_POST['editproductbtn'])) {
         }
     }
 
+    // Prepare and execute the update query
     $stmt = $conn->prepare("UPDATE products SET name = ?, price = ?, type = ?, image1 = ?, image2 = ?, image3 = ?, image4 = ?, height = ?, width = ?, depth = ?, description = ? WHERE id = ?");
     $stmt->bind_param('ssssssssssss', $productName, $productPrice, $productType, $imageNames['image1'], $imageNames['image2'], $imageNames['image3'], $imageNames['image4'], $productHeight, $productWidth, $productDepth, $productDesc, $productId);
 
@@ -129,6 +139,7 @@ if (isset($_POST['editproductbtn'])) {
 
 // Close the database connection only once at the end
 $conn->close();
+
 
 //******************   EDITPRODUCT FUNCTIONS END  *********************//
 
