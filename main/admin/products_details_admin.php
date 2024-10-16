@@ -72,7 +72,7 @@ if ($result->num_rows > 0) {
                                     <?php if (!empty($productImage1)): ?>
                                         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
                                             aria-labelledby="home-tab" tabindex="0">
-                                            <img class="img-fluid" src="../../images/products<?php echo $productImage1; ?>"
+                                            <img class="img-fluid" src="../../images/products/<?php echo $productImage1; ?>"
                                                 alt="">
                                         </div>
                                     <?php endif; ?>
