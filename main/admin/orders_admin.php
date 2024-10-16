@@ -33,9 +33,6 @@ if (!$result) {
 									<li class="nav-item">
 										<button id="delete-selected" class="btn btn-danger" style="display: none;">Delete Selected</button>
 									</li>
-									<li class="nav-item">
-										<a href="javascript:void(0);" class="btn btn-primary d-sm-inline-block d-none">Generate Report<i class="fa-solid fa-file-invoice icon-gap"></i></a>
-									</li>
 								</ul>
 							</div>
 							<div class="cm-content-body form excerpt">
