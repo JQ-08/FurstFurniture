@@ -116,4 +116,4 @@ This PHP-based platform caters to both customers and admins. Customers can regis
 |---|---|
 | Jing Ling | https://github.com/jessie0118 |
 | Jing Quan | https://github.com/JQ-08 |
-| YiXuen | https://github.com/LimYixuen |
+| Yixuen | https://github.com/LimYixuen |
