@@ -15,17 +15,17 @@ This PHP-based platform caters to both customers and admins. Customers can regis
 **Using:** Php 8.2.12
 
 **Features:**
-* **Customer Side (customerSide Folder):** Stores the website and allows customers to:
+* **Customer Side (user Folder):** Stores the website and allows customers to:
     * Sign in to access their account
     * View available furniture products
     * Add products to the cart and proceed to checkout
     * View and manage their order history
-* **Staff Side (adminSide Folder):** Stores the panels and allows staff to:
+* **Staff Side (admin Folder):** Stores the panels and allows admin to:
     * View profits, orders, and user details
     * Manage products: add, delete, and edit listings
     * Oversee customer orders and account details
 
-**Steps to run the project locally for Netbeans Manually:**
+**Steps to run the project locally for Visual Studio Code Manually:**
 
 1. Download the zip file from the code.
 2. Extract the zip file.
@@ -38,10 +38,10 @@ This PHP-based platform caters to both customers and admins. Customers can regis
 9. Open any browser, recommended `Chrome`.
 10. Open the website by using URL `http://localhost/furstfurniture-main/main/user/index.php`.
     
-    (JUST EXAMPLE)(ACCORDING THE FILE NAME AND LOCATION)
+    *The above URL is just an example. Please edit the URL according to your file's name and location.
 
 ## Example accounts
-**For admin account, it can directly go to the admin panel when login.**
+**To access the admin panel, one must use the username and password provideed below for the admin role. No other username and password can access the admin panel.**
 
 | Role | Username | Email | Password |
 |---|---|---|---|
@@ -116,4 +116,4 @@ This PHP-based platform caters to both customers and admins. Customers can regis
 |---|---|
 | Jing Ling | https://github.com/jessie0118 |
 | Jing Quan | https://github.com/JQ-08 |
-| Yi Xuen | https://github.com/LimYixuen |
+| YiXuen | https://github.com/LimYixuen |
