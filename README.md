@@ -29,7 +29,7 @@ This PHP-based platform caters to both customers and admins. Customers can regis
 
 1. Download the zip file from the code.
 2. Extract the zip file.
-3. Move the unzip file(furstfurniture-main) to C:\xampp\htdocs\
+3. Move the unzip file(furstfurniture-main) to `C:\xampp\htdocs\`
 4. Open XAMPP, start Apache and MySQL.
 5. Click the admin which as the same line as the MySQL.
 6. Create a new database and named it `shop_db` in phpMyAdmin.
