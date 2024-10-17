@@ -41,7 +41,7 @@ This PHP-based platform caters to both customers and admins. Customers can regis
     *The above URL is just an example. Please edit the URL according to your file's name and location.
 
 ## Example accounts
-**To access the admin panel, one must use the username and password provideed below for the admin role. No other username and password can access the admin panel.**
+**To access the admin panel, one must use the username and password provided below for the admin role. No other username and password can access the admin panel.**
 
 | Role | Username | Email | Password |
 |---|---|---|---|
