@@ -1,119 +1,70 @@
 # FurstFurniture
 This PHP-based platform caters to both customers and admins. Customers can register, browse products, add items to their cart, and manage orders. Admins access a dashboard for tracking profits and orders, and can manage product listings and user accounts. This system provides a seamless shopping experience with robust administrative tools.
 
-**Built with these:** 
-<p align="left">
-   <a href="#">
-      <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
-      <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
-      <img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
-      <img alt="Php" src="https://img.shields.io/badge/php-474a8a?style=for-the-badge&logo=php&logoColor=white" />
-      <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black"/>
-   </a>
-</p>
+Build with these:
 
-**Using:** Php 8.2.12
+![image](https://github.com/user-attachments/assets/e4580422-d2a5-470d-9227-08ed04f68157)  ![image](https://github.com/user-attachments/assets/2bec74dc-3136-4df5-980f-a7e098f4251b)
+  ![image](https://github.com/user-attachments/assets/6f7823f8-0bff-4df7-a83b-ed45e3e57f39)  ![image](https://github.com/user-attachments/assets/37675523-cb0a-4367-9d30-46e17ae4a789)  ![image](https://github.com/user-attachments/assets/df6a0436-5a71-4484-973c-bcd1c234bb40)
 
-**Features:**
-* **Customer Side (user Folder):** Stores the website and allows customers to:
-    * Sign in to access their account
-    * View available furniture products
-    * Add products to the cart and proceed to checkout
-    * View and manage their order history
-* **Staff Side (admin Folder):** Stores the panels and allows admin to:
-    * View profits, orders, and user details
-    * Manage products: add, delete, and edit listings
-    * Oversee customer orders and account details
+Using: PHP 8.2.12
 
-**Steps to run the project locally for Visual Studio Code Manually:**
+Features:
 
-1. Download the zip file from the code.
-2. Extract the zip file.
-3. Move the unzip file(furstfurniture-main) to `C:\xampp\htdocs\`
-4. Open XAMPP, start Apache and MySQL.
-5. Click the admin which as the same line as the MySQL.
-6. Create a new database and named it `shop_db` in phpMyAdmin.
-7. Import the `shop_db.sql`.
-8. Open Visual Studio Code, move the unzip file(furstfurniture-main) into vscode.
-9. Open any browser, recommended `Chrome`.
-10. Open the website by using URL `http://localhost/furstfurniture-main/main/user/index.php`.
-    
-    *The above URL is just an example. Please edit the URL according to your file's name and location.
+Customer Side (customerSide Folder):
 
-## Example accounts
-**To access the admin panel, one must use the username and password provided below for the admin role. No other username and password can access the admin panel.**
+•	Reservation Management:
 
-| Role | Username | Email | Password |
-|---|---|---|---|
-| Admin | admin | admin@gmail.com | 12345 |
-| Customer | user | user@gmail.com | 123 |
-| Customer | Syahir | syahir@gmail.com | as23 |
-| Customer | Chris | chris93@gmail.com | 21332 |
-| Customer | Claire | claire416@gmail.com | 21sa |
-| Customer | Ethan | ethan00@gmail.com | 23sdas |
-| Customer | Nagathan | drbyclb@gmail.com | 7897 |
-| Customer | Feng | feng30@gmail.com | 235 |
-| Customer | Choom Imm | popekpopek@gmail.com | 314215926 |
-| Customer | Nur Fatihah | bmbest@gmail.com | 987 |
-| Customer | Noreza | skmestiaplus@gmail.com | 6784 |
+  o	Make reservations for products or services.
+  
+•	Account Registration:
 
-## Screenshots
-* **Main page**
+   o	Register for accounts to access personalized features.
+  
+•	Profile Management:
 
-![image](https://github.com/user-attachments/assets/437168b6-e59c-4663-89d4-ee8e0556a4e2)
+   o	View and manage profile points and preferences.
+  
+________________________________________
 
-* **Login/Register page**
+Staff Side (adminSide Folder):
 
-![image](https://github.com/user-attachments/assets/880020df-f1eb-48db-b477-e88169ad25fa)
+•	Order Management:
 
-* **Products page**
+   o	Take customer orders efficiently.
 
-![image](https://github.com/user-attachments/assets/57ec1bd2-b8e3-46ea-93a1-797fa36e1ed0)
+•	Kitchen Communication:
 
-* **Product Details page**
+   o	Send orders directly to the kitchen for processing.
+  
+•	Payment Processing:
 
-![image](https://github.com/user-attachments/assets/367a65ae-4bd9-487d-b72a-44b142b2c8c0)
+   o	Process payments securely.
+  
+•	Receipt Printing:
 
-* **Shopping Cart page**
+   o	Print receipts for customer transactions.
+  
+•	CRUD Operations:
 
-![image](https://github.com/user-attachments/assets/08e4cece-9f7e-4be4-ab13-d306dfe0462f)
+   o	Manage Create, Read, Update, and Delete operations for products and orders.
+  
+•	User Preferences:
 
-* **Checkout page**
+   o	View and manage user preferences for improved service.
+  
+•	Reporting:
 
-![image](https://github.com/user-attachments/assets/fa583812-fe75-4fb9-972d-54948de73423)
+   o	Download detailed reports for analysis.
+  
+•	Data Visualization:
 
-* **Orders page**
+   o	View charts and graphs to analyze performance metrics.
+  
 
-![image](https://github.com/user-attachments/assets/affd418a-9cf6-4b3a-8209-ea53c8e7477a)
 
-* **View Order page**
 
-![image](https://github.com/user-attachments/assets/80673e3f-ef20-4fdb-9852-8c1302693db6)
 
-* **Dashboard page (Admin)**
 
-![image](https://github.com/user-attachments/assets/129fdd11-2a7d-4975-9ab5-e900d7a40b22)
 
-* **User List page (Admin)**
 
-![image](https://github.com/user-attachments/assets/1c9fdb0d-23c7-4242-9224-a66da1577466)
 
-* **Product List page (Admin)**
-
-![image](https://github.com/user-attachments/assets/e990d54b-49b1-4abc-ac80-1e582064df7a)
-
-* **Order List page (Admin)**
-
-![image](https://github.com/user-attachments/assets/8a009cdb-22fe-46eb-8d6b-16ebbb3b4c61)
-
-* **Loading animation (Admin)**
-
-![image](https://github.com/user-attachments/assets/516caae2-0248-4949-9882-642b4b358219)
-
-## Contributors
-
-| Name | Github |
-|---|---|
-| Jing Ling | https://github.com/jessie0118 |
-| Jing Quan | https://github.com/JQ-08 |
-| Yixuen | https://github.com/LimYixuen |

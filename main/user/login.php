@@ -104,7 +104,7 @@
                             </div>                      
                         </div>
                         <div class="input-box">
-                            <input type="password" class="input-field" placeholder="Password" id="regPwd2" name="pwdrepeat" required>
+                            <input type="password" class="input-field" placeholder="Confirm Password" id="regPwd2" name="pwdrepeat" required>
                             <div class="lock-box" onclick="myRegPassword2()">
                                 <i class="bx bx bxs-lock-alt icon" id="lock3"></i>
                                 <i class='bx bx-lock-open-alt icon' id="lock-open3"></i>      

@@ -144,7 +144,7 @@ form .title{
     outline: none;
 }
 
-.continue-btn, .place-order-btn {
+.continue-btn, .place-order-btn, .back-btn {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -160,7 +160,12 @@ form .title{
     color: white;
     border: none;}
 
-.continue-btn:hover, .place-order-btn:hover{
+.back-btn{
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.continue-btn:hover, .place-order-btn:hover, .back-btn:hover{
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
     transform: translateY(-3px); 
     cursor: pointer;

@@ -13,6 +13,11 @@ if (!isset($_SESSION['userId'])) {
 
 $userId = $_SESSION['userId'];
 
+if (isset($_GET['back_to_billing'])) {
+    unset($_SESSION['address_step']); // Reset to billing details step
+}
+
+
 if ($userId !== null) {
     if (isset($_POST['continue'])) {
         $_SESSION['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
@@ -192,6 +197,7 @@ ob_end_flush();
                             </select>
                         </div>
                     </div>
+                    <a href="checkout.php?back_to_billing=true" class="back-btn">Back to Billing Details</a>
                     <input type="submit" value="Place Order" name="place_order" class="place-order-btn">
                 <?php endif; ?>
             </form>

@@ -3,9 +3,15 @@ session_start();
 include 'includes/connect.php';
 include 'css/orders_css.php';
 
-if (isset($_SESSION['userId'])) {
-    $userId = $_SESSION['userId'];
+if (!isset($_SESSION['userId'])) {
+    echo '<script>
+       alert("You need to log in to your account!");
+       window.location.href = "login.php";
+   </script>';
+    exit();
 }
+
+$userId = $_SESSION['userId'];
 
 // Get all orders to display on page load
 $query = "SELECT * FROM `orders` WHERE userId = ? ORDER BY date DESC";

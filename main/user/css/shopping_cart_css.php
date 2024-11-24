@@ -94,6 +94,15 @@ p {
 .vertical-slider::-webkit-scrollbar {
     width: 0; /* For Chrome, Safari, and Opera */
 }
+
+.no-products {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
 .container {
     height: 180px;
     position: relative;
@@ -299,4 +308,5 @@ a{
 .copyright a{
     color: black;
 }
+
 </style>

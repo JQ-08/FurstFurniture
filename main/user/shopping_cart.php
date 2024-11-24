@@ -3,11 +3,15 @@ session_start();
 include 'css/shopping_cart_css.php';
 include 'includes/connect.php';
 
-if (isset($_SESSION['userId'])) {
-    $userId = $_SESSION['userId'];
-} else {
-    $userId = null;
+if (!isset($_SESSION['userId'])) {
+    echo '<script>
+       alert("You need to log in to your account!");
+       window.location.href = "login.php";
+   </script>';
+    exit();
 }
+
+$userId = $_SESSION['userId'];
 
 $success_msg = [];
 $warning_msg = [];
@@ -80,6 +84,11 @@ $totalPrice = 0;
                 <p><?php echo count($cartItems); ?> items in total</p>
             </div>
             <div class="vertical-slider">
+            <?php if (empty($cartItems)): ?>
+                <div class="no-products">
+                    <p>No products in your shopping cart.</p>
+                </div>
+            <?php else: ?>
                 <?php foreach ($cartItems as $item): ?>
                     <div class="container">
                         <div class="product-img">
@@ -137,7 +146,8 @@ $totalPrice = 0;
                         </div>
                     </div>
                 <?php endforeach; ?>
-            </div>
+            <?php endif; ?>
+        </div>
         </div>
         <div class="col col-2">
             <div class="title-summary">

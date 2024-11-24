@@ -123,7 +123,7 @@ if (isset($_POST['cancel'])) {
                     <input type="submit" value="Cancel Order" name="cancel" class="cancel-order" onclick="return confirm('Cancel this Order?');" >
                 </form>
             <?php } else { ?>
-                <a href="checkout.php?get_id=<?= $fetch_product['id']; ?>" class="order-again">Order Again</a>
+                <a href="orderagain.php?get_id=<?= $fetch_product['id']; ?>&qty=<?= $fetch_order['qty']; ?>" class="order-again">Order Again</a>
             <?php } ?>
         </div>
     </div>
