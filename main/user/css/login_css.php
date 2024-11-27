@@ -237,22 +237,22 @@ form .login-form{
     transform: translateY(-50%);
     color: #fff;
 }
-
-.forgot-pass{
+.forgotpwd{
     display: flex;
-    justify-content: right;
-    gap: 5px;
+    justify-content: center;
 }
 
-.forgot-pass a{
+.forgotpwd a{
     color: #fff;
     text-decoration: none;
     font-size: 14px;
 }
 
-.forgot-pass a:hover{
+.forgotpwd a:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
+
 .input-submit{
     display: flex;
     align-items: center;
