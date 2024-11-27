@@ -8948,7 +8948,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   }
 
   .text-end {
-    text-align: right !important;
+    text-align: left !important;
   }
 
   .text-center {
