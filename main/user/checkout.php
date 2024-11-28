@@ -17,8 +17,20 @@ if (isset($_GET['back_to_billing'])) {
     unset($_SESSION['address_step']); // Reset to billing details step
 }
 
-
 if ($userId !== null) {
+    // Check if the cart is empty
+    $check_cart = $conn->prepare("SELECT COUNT(*) FROM `cart` WHERE userId = ?");
+    $check_cart->execute([$userId]);
+    $cart_count = $check_cart->fetchColumn();
+
+    if ($cart_count == 0) {
+        echo '<script>
+        alert("Your cart is empty. No items to checkout.");
+        window.location.href = "shopping_cart.php";
+    </script>';
+        exit();
+    }
+
     if (isset($_POST['continue'])) {
         $_SESSION['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
         $_SESSION['number'] = filter_var($_POST['number'], FILTER_SANITIZE_STRING);

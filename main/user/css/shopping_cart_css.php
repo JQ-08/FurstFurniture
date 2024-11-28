@@ -92,9 +92,9 @@ p {
 }
 
 .vertical-slider {
-    height: 420px; /* Set the height of the visible area */
-    overflow-y: auto; /* Enable vertical scrolling */
-    scroll-behavior: smooth; /* Smooth scrolling for better UX */
+    height: 420px; 
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
 .vertical-slider::-webkit-scrollbar {
     width: 0; /* For Chrome, Safari, and Opera */
@@ -272,6 +272,12 @@ form .btn-checkout{
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+}
+
+form .btn-checkout .checkout:hover{
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow on hover */
+    transform: translateY(-3px); /* Slightly lifts the button */
+    cursor: pointer;
 }
 
 button{
