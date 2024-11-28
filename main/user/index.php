@@ -101,7 +101,7 @@ if (isset($_POST['add_to_cart'])) {
                     <div class="topic">TROTTEN</div>
                     <div class="des">
                         <!-- 20 lorem -->
-                        Desk, beige/white, 120x70 cm
+                        Table, White, 120x70x75 cm
                     </div>
                     <button class="seeMore">SEE MORE &#8599</button>
                 </div>
@@ -110,11 +110,14 @@ if (isset($_POST['add_to_cart'])) {
                     <div class="des">
                         <!-- lorem 50 -->
                         Small desk that fits in every space – at your office or at home. The A shape of the legs is a
-                        smart
-                        design feature that allows you to use all the space under the desk for your office chair and
+                        smart design feature that allows you to use all the space under the desk for your office chair and
                         storage.
                     </div>
                     <div class="specifications">
+                        <div>
+                            <p>Width</p>
+                            <p>120 cm</p>
+                        </div>
                         <div>
                             <p>Depth</p>
                             <p>70 cm</p>
@@ -127,16 +130,12 @@ if (isset($_POST['add_to_cart'])) {
                             <p>Max. load</p>
                             <p>50 kg</p>
                         </div>
-                        <div>
-                            <p>Width</p>
-                            <p>120 cm</p>
-                        </div>
                     </div>
                     <div class="checkout">
                         <form action="index.php" method="POST">
                             <input type="hidden" name="product_id" value="756">
                             <input type="hidden" name="qty" value="1">
-                            <button type="submit" name="add_to_cart">ADD TO CART</button>
+                            <button type="submit" name="add_to_cart" class="add_to_cart">ADD TO CART</button>
                             <div class="arrow">
                                 <button id="back1" type="button"><span
                                         class="material-symbols-outlined">keyboard_backspace</span></button>
@@ -153,7 +152,7 @@ if (isset($_POST['add_to_cart'])) {
                     <div class="topic">GRUPPSPEL</div>
                     <div class="des">
                         <!-- 20 lorem -->
-                        Gaming chair, Gunnared beige
+                        Gaming chair, Gunnared beige, 69x64x116 cm
                     </div>
                     <button class="seeMore">SEE MORE &#8599</button>
                 </div>
@@ -169,6 +168,10 @@ if (isset($_POST['add_to_cart'])) {
                     </div>
                     <div class="specifications">
                         <div>
+                            <p>Width</p>
+                            <p>160 cm</p>
+                        </div>
+                        <div>
                             <p>Depth</p>
                             <p>64 cm</p>
                         </div>
@@ -176,16 +179,12 @@ if (isset($_POST['add_to_cart'])) {
                             <p>Height</p>
                             <p>124 cm</p>
                         </div>
-                        <div>
-                            <p>Width</p>
-                            <p>160 cm</p>
-                        </div>
                     </div>
                     <div class="checkout">
                         <form action="index.php" method="POST">
                             <input type="hidden" name="product_id" value="771">
                             <input type="hidden" name="qty" value="1">
-                            <button type="submit" name="add_to_cart">ADD TO CART</button>
+                            <button type="submit" name="add_to_cart" class="add_to_cart">ADD TO CART</button>
                             <div class="arrow">
                                 <button id="back2" type="button"><span
                                         class="material-symbols-outlined">keyboard_backspace</span></button>
@@ -196,42 +195,41 @@ if (isset($_POST['add_to_cart'])) {
             </div>
 
                 <div class="item">
-                    <img src="../../images/wardrobe_removebg.png">
+                    <img src="../../images/products/234Z8.png">
                     <div class="introduce">
                         <div class="title">NEW WARDROBE</div>
-                        <div class="topic">PAX</div>
+                        <div class="topic">BRIMNES</div>
                         <div class="des">
                             <!-- 20 lorem -->
-                            Wardrobe, white, 175x58x201 cm
+                            Wardrobe, White, 190x50x117 cm
                         </div>
                         <button class="seeMore">SEE MORE &#8599</button>
                     </div>
                     <div class="detail">
-                        <div class="title">PAX</div>
+                        <div class="title">BRIMNES</div>
                         <div class="des">
                             <!-- lorem 50 -->
-                            Keep it simple. Here's a basic solution to get you started, and space for more interiors if you want
-                            to upgrade.
+                            Transform your space with the sleek and functional BRIMNES wardrobe. Designed to combine modern aesthetics with everyday practicality, this wardrobe is the ultimate solution for organizing your clothing, accessories, and essentials.
                         </div>
                         <div class="specifications">
                             <div>
                                 <p>Width</p>
-                                <p>175.0 cm</p>
+                                <p>190 cm</p>
                             </div>
                             <div>
                                 <p>Depth</p>
-                                <p>58.0 cm</p>
+                                <p>50 cm</p>
                             </div>
                             <div>
                                 <p>Height</p>
-                                <p>201.2 cm</p>
+                                <p>117 cm</p>
                             </div>
                         </div>
                         <div class="checkout">
                             <form action="index.php" method="POST">
                                 <input type="hidden" name="product_id" value="753">
                                 <input type="hidden" name="qty" value="1">
-                                <button type="submit" name="add_to_cart">ADD TO CART</button>
+                                <button type="submit" name="add_to_cart" class="add_to_cart">ADD TO CART</button>
                                 <div class="arrow">
                                     <button id="back3" type="button"><span class="material-symbols-outlined">keyboard_backspace</span></button>
                                 </div>

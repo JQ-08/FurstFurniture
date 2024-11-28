@@ -313,6 +313,8 @@ header nav a span.material-symbols-outlined {
     width: 100%;
     border-top: 1px solid #5553;
     margin-top: 20px;
+    justify-content: flex-end;
+    text-align: right; 
 }
 .carousel.showDetail .list .item:nth-child(2) .detail .specifications div{
     width: 90px;
@@ -323,14 +325,24 @@ header nav a span.material-symbols-outlined {
     font-weight: bold;
 }
 .carousel.carousel.showDetail .list .item:nth-child(2) .checkout button{
-    font-family: Poppins;
     background-color: transparent;
-    border: 1px solid #5555;
+    border: 1px solid black;
+    border-radius: 15px;
     margin-left: 5px;
     padding: 5px 10px;
     letter-spacing: 2px;
     font-weight: 500;
+}
+.carousel.carousel.showDetail .list .item:nth-child(2) .checkout .add_to_cart{
+    margin-top: 10px;
+}
+.carousel.carousel.showDetail .list .item:nth-child(2) .checkout .add_to_cart:hover{
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
     cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
 }
 .carousel.carousel.showDetail .list .item:nth-child(2) .checkout button:nth-child(2){
     background-color: #693EFF;
