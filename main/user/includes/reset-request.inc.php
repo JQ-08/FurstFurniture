@@ -48,7 +48,7 @@ if (isset($_POST["reset-request-submit"])) {
     $message .= '<p>Here is your password link: </br>';
     $message .= '<a href="' . $url . '">' . $url . '</a></p>';
 
-    $headers = "From: Furst <m-9502606@moe-dl.edu.my>\r\n";
+    $headers = "From: Fürst Furniture <m-9502606@moe-dl.edu.my>\r\n";
     $headers .= "Reply-To: m-9502606@moe-dl.edu.my\r\n";
     $headers .= "Content-type: text/html\r\n";
 
