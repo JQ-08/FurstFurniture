@@ -311,6 +311,3 @@ $totalPrice = 0;
 
 
 </script>
-<?php
-// include 'includes/footer.php';
-?>

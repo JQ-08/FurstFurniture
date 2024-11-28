@@ -275,6 +275,10 @@ form .login-form{
     gap: 15px;
 }
 
+.lock-box:hover{
+    cursor: pointer;
+}
+
 .footer 
     {
         width: 100%; 

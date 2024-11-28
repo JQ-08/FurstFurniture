@@ -240,7 +240,7 @@ if (isset($_POST['cancel'])) {
 
     <footer class="footer">
         <div class="copyright">
-            <p>© Designed &amp; by Algorithm Avengers 2024</p>
+            <p>© Designed by Algorithm Avengers 2024</p>
         </div>
 </footer>
 </body>

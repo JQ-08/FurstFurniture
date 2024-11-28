@@ -131,9 +131,16 @@ $select_orders->execute([$userId]);
     }
 </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+<footer class="footer">
+        <div class="copyright">
+            <p>© Designed by Algorithm Avengers 2024</p>
+        </div>
+</footer>
+</body>
+</html>
 
 <?php
 include 'includes/functions.inc.php';
-include 'includes/footer.php';
 ?>

@@ -199,6 +199,30 @@
         margin-top: 50px;
     }
 
+    .footer 
+    {
+        width: 100%; 
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        font-size: 13px;
+        margin-top: 20px;
+        margin-bottom, margin-left, margin-right: 0px;
+    }
+
+    .footer .copyright {
+        padding: 0.9375rem;
+    }
+
+    .footer .copyright p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer .copyright a {
+        color: var(--primary);
+    }
+
     /* Responsive Design */
     @media (max-width: 768px) {
         .box {

@@ -228,7 +228,7 @@ ob_end_flush();
 
     <footer class="footer">
         <div class="copyright">
-            <p>© Designed &amp; by Algorithm Avengers 2024</p>
+            <p>© Designed by Algorithm Avengers 2024</p>
         </div>
     </footer>
 
