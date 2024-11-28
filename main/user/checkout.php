@@ -180,18 +180,18 @@ ob_end_flush();
                     <div class="flex">
                         <div class="box">
                             <p>Name</p>
-                            <input type="text" name="name" required maxlength="50" placeholder="Enter your name"
+                            <input type="text" name="name" required maxlength="50" placeholder="Enter your Name"
                                 class="input">
                             <p>Phone Number</p>
-                            <input type="number" name="number" required maxlength="10" placeholder="Enter your phone number"
+                            <input type="number" name="number" required maxlength="10" placeholder="Enter your Phone Number"
                                 class="input" min="0" max="9999999999">
                             <p>Email</p>
-                            <input type="email" name="email" required maxlength="50" placeholder="Enter your email"
+                            <input type="email" name="email" required maxlength="50" placeholder="Enter your Email"
                                 class="input">
                         </div>
                     </div>
                     <input type="submit" value="Continue" name="continue" class="continue-btn">
-                    <a href="shopping_cart.php" class="continue-btn" style="margin-top: 10px; text-decoration: none;">Back to Shopping Cart</a>
+                    <a href="shopping_cart.php" class="continue-btn btsc" style="margin-top: 10px; text-decoration: none;">Back to Shopping Cart</a>
                 <?php else: ?>
                     <h3 class="title">Shipping Details</h3>
                     <div class="flex">
@@ -204,7 +204,7 @@ ob_end_flush();
                             <p>Postal Code</p>
                             <input type="text" name="pin_code" required placeholder="Postal Code" class="address">
                             <p>Payment Method</p>
-                            <select name="method" class="input" required>
+                            <select name="method" class="input method" required>
                                 <option value="credit card">Credit Card</option>
                                 <option value="cash on delivery">Cash on Delivery</option>
                             </select>

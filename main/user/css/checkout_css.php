@@ -120,6 +120,18 @@ form .title{
     margin: 0;
 }
 
+/* For Chrome, Safari, Edge, and other WebKit browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .box {
     margin-bottom: 30px; 
     display: flex;
@@ -168,12 +180,21 @@ form .title{
 .back-btn{
     margin-bottom: 10px;
     text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 .continue-btn:hover, .place-order-btn:hover, .back-btn:hover{
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
     transform: translateY(-3px); 
     cursor: pointer;
+}
+
+.btsc{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 
 .address{
@@ -251,7 +272,6 @@ form .title{
         padding: 1rem;
         background-color: #f6f6f6;
         font-size: 13px;
-        margin-top: 300px;
     }
 
     .footer .copyright {
@@ -266,7 +286,6 @@ form .title{
     .footer .copyright a {
         color: var(--primary);
     }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
