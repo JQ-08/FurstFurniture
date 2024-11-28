@@ -119,7 +119,7 @@ if (isset($_POST['cancel'])) {
             <p class="status <?= htmlspecialchars(str_replace(' ', '_', $order_details['status'] ?? 'unknown')); ?>">
                 Status: <?= htmlspecialchars($order_details['status'] ?? 'Unknown'); ?>
             </p>      
-            <?php if ($fetch_order['status'] != 'canceled') { ?>
+            <?php if ($fetch_order['status'] != 'canceled' && $fetch_order['status'] != 'completed') { ?>
                 <form action="" method="POST" style="display: inline;">
                     <input type="submit" value="Cancel Order" name="cancel" class="cancel-order" onclick="return confirm('Cancel this Order?');" >
                 </form>

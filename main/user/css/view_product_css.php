@@ -291,27 +291,21 @@ img {
   border: none !important;  
 }
 
-.card_button:hover 
+.card_button:hover,
 .submit:hover{
   box-shadow: 0 18px 40px -12px rgba(242,162,12,.35);
-}
-/* form .submit {
-  display: block;
-  width: max-content;
-  padding: 0.5rem 1.7rem;
-  background-color: var(--first-color);
-  color: var(--white-color);
-  border-radius: .5rem;
-  font-size: 12;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  transition: .2s;
-  opacity: 0;
+  color: black;
+  background-color: #ffdbbb;
 }
 
-form .submit:hover {
-  box-shadow: 0 18px 40px -12px rgba(242,162,12,.35);
-} */
+.card_button{
+  font-weight: 600;
+}
+
+.submit{
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
 
 .card_img, 
 .card_data, 

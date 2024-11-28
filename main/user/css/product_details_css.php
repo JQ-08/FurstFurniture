@@ -314,6 +314,12 @@ header nav a span.material-symbols-outlined {
   gap: 15px;
 }
 
+.add-to-cart:hover{
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow on hover */
+  transform: translateY(-3px); /* Slightly lifts the button */
+  cursor: pointer;
+}
+
 .counter {
   display: flex;
   justify-content: space-between;
