@@ -1,5 +1,6 @@
 <?php
-
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 session_start();
 include 'css/createPwd_css.php';
 
@@ -47,28 +48,38 @@ include 'css/createPwd_css.php';
             <a href="shopping_cart.php"><span class="material-symbols-outlined" alt="cart icon">shopping_cart</span></a>
         </nav>
     </header>
-
+    
     <?php
-        $selector = $_GET["selector"];
-        $validator = $_GET["validator"];
+    if (isset($_GET['selector']) && isset($_GET['validator'])) {
+        $selector = $_GET['selector'];
+        $validator = $_GET['validator'];
 
         if (empty($selector) || empty($validator)) {
             echo "Could not validate your request!";
         } else {
             if (ctype_xdigit($selector) !== false && ctype_xdigit($validator) !== false) {
     ?>
-
-    <form action="includes/reset-password.inc.php" method="post">
-        <input type="hidden" name="selector" value="<?php echo $selector ?>">
-        <input type="hidden" name="validator" value="<?php echo $validator ?>">
-        <input type="password" name="pwd" placeholder="Enter a new password...">
-        <input type="password" name="pwd-repeat" placeholder="Repeat new password...">
-        <button type="submit" name="reset-password-submit">Reset password</button>
-    </form>
+    <div class="content">
+        <div class="word">
+            <p>Please enter your new password...</p>
+        </div>
+        <div class="form">
+            <form action="includes/reset-password.inc.php" method="post">
+                <input type="hidden" name="selector" value="<?php echo $_GET["selector"]; ?>">
+                <input type="hidden" name="validator" value="<?php echo $_GET["validator"]; ?>">
+                <input type="password" name="pwd" placeholder="                                  Enter a new password...">
+                <br>
+                <input type="password" name="pwd-repeat" placeholder="                                  Repeat new password...">
+                <br>
+                <button type="submit" name="reset-password-submit">Reset password</button>
+            </form>
+        </div>
+    </div>
 
     <?php
             }
         }
+    }
     ?>
 
 </body>

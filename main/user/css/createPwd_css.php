@@ -64,7 +64,44 @@ header nav a span.material-symbols-outlined {
     vertical-align: middle;
 }
 
+.content {
+    width: 800px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0 0 280px;
+    border: solid 3px;
+}
 
+.word p {
+    text-align: center;
+    padding: 5px 0 20px;
+    border-bottom: 2px solid;
+    font-weight: 600;
+    font-size: 18;
+}
+
+.content .form {
+    text-align: center;
+    margin: 36px;
+}
+
+.content form input {
+    width: 400px;
+    height: 35px;
+    margin: 0 0 20px;
+    border-radius: 10px;
+}
+
+.content form button {
+    width: 300px;
+    height: 35px;
+    margin: 0 0 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14;
+    cursor: pointer;
+}
 
 .copyright p{
     position: absolute;

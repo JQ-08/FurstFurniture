@@ -80,13 +80,13 @@
                             </button>
                         </div>
                         <div class="forgotpwd">
-                            <?php
-                                if (isset($_GET["newpwd"])) {
-                                    if ($_GET["newpwd"] == "passwordupdated") {
-                                        echo '<p class="signupsuccess">Your password has been reset</p>';
-                                    }
+                        <?php
+                            if (isset($_GET["newpwd"])) {
+                                if ($_GET["newpwd"] == "passwordupdated") {
+                                    echo '<script>alert("Your password has been reset successfully!");</script>';
                                 }
-                            ?>
+                            }
+                        ?>
                             <a href="reset-password.php">Forgot password?</a>
                         </div>
                     </div>

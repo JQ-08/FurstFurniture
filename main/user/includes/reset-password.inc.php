@@ -5,15 +5,15 @@ if (isset($_POST["reset-password-submit"])) {
     $selector = $_POST["selector"];
     $validator = $_POST["validator"];
     $password = $_POST["pwd"];
-    $passwordRepeat = $_POST["pwc-repeat"];
+    $passwordRepeat = $_POST["pwd-repeat"];
 
     if (empty($password) || empty($passwordRepeat)) {
-        header("Location: ../create-new-password.php");
-        // header("Location: ../create-new-password.php?newpwd=empty");
+        // header("Location: ../create-new-password.php");
+        header("Location: ../create-new-password.php?newpwd=empty");
         exit();
     } else if ($password != $passwordRepeat) {
-        header("Location: ../create-new-password.php");
-        // header("Location: ../create-new-password.php?newpwd=pwdnotsame");
+        // header("Location: ../create-new-password.php");
+        header("Location: ../create-new-password.php?newpwd=pwdnotsame");
         exit();
     }
 
@@ -66,7 +66,7 @@ if (isset($_POST["reset-password-submit"])) {
                             echo "There was an error!";
                             exit();
                         } else {
-                            $newPwdHash = password_hash($password, PASSWORD_DEFAULT);
+                            $newPwdHash = $password;
                             mysqli_stmt_bind_param($stmt, "ss", $newPwdHash, $tokenEmail);
                             mysqli_stmt_execute($stmt);
 
