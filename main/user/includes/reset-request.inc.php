@@ -8,7 +8,7 @@ if (isset($_POST["reset-request-submit"])) {
     $selector = bin2hex(random_bytes(8));
     $token = random_bytes(32);
 
-    $url = "http://localhost/furst_github/furstfurniture/main/user/create-new-password.php?selector=" . $selector . "&validator=" . bin2hex($token);
+    $url = "http://localhost/furstfurniture/main/user/create-new-password.php?selector=" . $selector . "&validator=" . bin2hex($token);
 
     $expires = date("U") + 1800;
 
