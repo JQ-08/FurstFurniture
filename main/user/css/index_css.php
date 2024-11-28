@@ -382,16 +382,23 @@ header nav a span.material-symbols-outlined {
     height: 40px;
     border-radius: 50%;
     font-family: monospace;
-    border: 1px solid #5555;
+    border: 1.5px solid #555;
     font-size: large;
     bottom: 20%;
     left: 10%;
     cursor: pointer;
 }
+
 #next{
     left: unset;
     right: 10%;
     cursor: pointer;
+}
+
+#prev:hover, #next:hover{
+    background-color: black;
+    border: none;
+    color: white;
 }
 
 form #back1, #back2, #back3{
