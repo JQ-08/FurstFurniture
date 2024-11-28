@@ -60,8 +60,13 @@ header nav a span.material-symbols-outlined {
     position: relative;
     top: 0px; 
     font-size: 22px; 
-    color: #333; 
+    color: #555; 
     vertical-align: middle;
+}
+
+header nav a:hover, header nav a span.material-symbols-outlined:hover{
+    color: black;
+    transition: 0.3s ease;
 }
 
 h1, p {

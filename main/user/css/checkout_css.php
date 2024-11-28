@@ -29,7 +29,7 @@ body {
   --body-font: 'Poppins', sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: 0.9rem; /* 小字体 */
+  --normal-font-size: 1rem;
   --small-font-size: .875rem;
 }
 
@@ -66,8 +66,13 @@ header nav a span.material-symbols-outlined {
     position: relative;
     top: 0px; 
     font-size: 22px; 
-    color: #333; 
+    color: #555; 
     vertical-align: middle;
+}
+
+header nav a:hover, header nav a span.material-symbols-outlined:hover{
+    color: black;
+    transition: 0.3s ease;
 }
 
 /* Main */

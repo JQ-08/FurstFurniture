@@ -40,25 +40,25 @@ $select_orders->execute([$userId]);
 <body>
 
     <header>
-      <a href='./index.php'>
-         <div class="logo">
-            <img src="../../images/furst.png" alt="Logo">
-        </div>
-      </a>
-      <nav>
-        <a href="view_products.php">Products</a>
-        <a href="orders.php">Orders</a>
-        <?php
-            if (isset($_SESSION["username"])) {
-                echo "<a href='profile.php'>" . $_SESSION["username"] . "</a>";
-              echo "<a href='#' onclick=\"if(confirm('Are you sure you want to logout?')) { setTimeout(function(){ alert('You\'ve been logged out. Redirecting to home page...'); window.location.href='includes/logout.inc.php'; }, 1000); } else { event.preventDefault(); }\">Logout</a>";
-            } else {
-              echo "<a href='login.php'>Login</a>";
-            }
-        ?>
-        <a href="shopping_cart.php"><span class="material-symbols-outlined" alt="cart icon">shopping_cart</span></a>
-      </nav>
-   </header>
+        <a href='./index.php'>
+            <div class="logo">
+                <img src="../../images/furst.png" alt="Logo">
+            </div>
+        </a>
+        <nav>
+            <a href="view_products.php">Products</a>
+            <a href="orders.php">Orders</a>
+            <?php
+                if (isset($_SESSION["username"])) {
+                    echo "<a href='profile.php'>" . $_SESSION["username"] . "</a>";
+                    echo "<a href='#' onclick=\"if(confirm('Are you sure you want to logout?')) { setTimeout(function(){ alert('You\'ve been logged out. Redirecting to home page...'); window.location.href='includes/logout.inc.php'; }, 1000); } else { event.preventDefault(); }\">Logout</a>";
+                } else {
+                    echo "<a href='login.php'>Login</a>";
+                }
+                ?>
+            <a href="shopping_cart.php"><span class="material-symbols-outlined" alt="cart icon">shopping_cart</span></a>
+        </nav>
+    </header>
 
 <section class="orders">
     <h1 class="heading">My Orders</h1>

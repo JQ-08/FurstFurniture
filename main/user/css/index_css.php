@@ -46,7 +46,7 @@ header{
     margin: auto;
     height: 50px;
     align-items: center;
-    background-color: transparent; /* Optional: semi-transparent background */
+    background-color: transparent;
 }
 header .logo img{
     position: relative;
@@ -62,11 +62,15 @@ header nav a{
     font-weight: 500;  
     background-color: transparent;  
 }
+header nav a:hover, header nav a span.material-symbols-outlined:hover{
+    color: black;
+    transition: 0.3s ease;
+}
 header nav a span.material-symbols-outlined {
     position: relative;
     top: 0px; 
     font-size: 22px; 
-    color: #333; 
+    color: #555; 
     vertical-align: middle;
 }
 /* carousel */
