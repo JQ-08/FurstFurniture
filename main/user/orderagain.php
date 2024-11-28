@@ -152,6 +152,7 @@ ob_end_flush();
             <a href="orders.php">Orders</a>
             <?php
             if (isset($_SESSION["username"])) {
+                echo "<a href='profile.php'>" . $_SESSION["username"] . "</a>";
                 echo "<a href='#' onclick=\"if(confirm('Are you sure you want to logout?')) { setTimeout(function(){ alert('You\'ve been logged out. Redirecting to home page...'); window.location.href='includes/logout.inc.php'; }, 1000); } else { event.preventDefault(); }\">Logout</a>";
             } else {
                 echo "<a href='login.php'>Login</a>";
