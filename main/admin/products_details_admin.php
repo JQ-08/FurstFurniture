@@ -72,28 +72,28 @@ if ($result->num_rows > 0) {
                                     <?php if (!empty($productImage1)): ?>
                                         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
                                             aria-labelledby="home-tab" tabindex="0">
-                                            <img class="img-fluid" src="../../images/products/<?php echo $productImage1; ?>"
+                                            <img class="img-fluid1" src="../../images/products/<?php echo $productImage1; ?>"
                                                 alt="">
                                         </div>
                                     <?php endif; ?>
                                     <?php if (!empty($productImage2)): ?>
                                         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
                                             aria-labelledby="profile-tab" tabindex="0">
-                                            <img class="img-fluid" src="../../images/products/<?php echo $productImage2; ?>"
+                                            <img class="img-fluid1" src="../../images/products/<?php echo $productImage2; ?>"
                                                 alt="">
                                         </div>
                                     <?php endif; ?>
                                     <?php if (!empty($productImage3)): ?>
                                         <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
                                             aria-labelledby="contact-tab" tabindex="0">
-                                            <img class="img-fluid" src="../../images/products/<?php echo $productImage3; ?>"
+                                            <img class="img-fluid1" src="../../images/products/<?php echo $productImage3; ?>"
                                                 alt="">
                                         </div>
                                     <?php endif; ?>
                                     <?php if (!empty($productImage4)): ?>
                                         <div class="tab-pane fade" id="end-tab-pane" role="tabpanel"
                                             aria-labelledby="end-tab" tabindex="0">
-                                            <img class="img-fluid" src="../../images/products/<?php echo $productImage4; ?>"
+                                            <img class="img-fluid1" src="../../images/products/<?php echo $productImage4; ?>"
                                                 alt="">
                                         </div>
                                     <?php endif; ?>
@@ -104,7 +104,7 @@ if ($result->num_rows > 0) {
                                             <a href="#home-tab-pane" class="nav-link active" id="home-tab"
                                                 data-bs-toggle="tab" role="tab" aria-controls="home-tab-pane"
                                                 aria-selected="true">
-                                                <img class="img-fluid me-2"
+                                                <img class="img-fluid2 me-2"
                                                     src="../../images/products/<?php echo $productImage1; ?>" alt=""
                                                     width="80">
                                             </a>
@@ -115,7 +115,7 @@ if ($result->num_rows > 0) {
                                             <a href="#profile-tab-pane" class="nav-link" id="profile-tab"
                                                 data-bs-toggle="tab" role="tab" aria-controls="profile-tab-pane"
                                                 aria-selected="false">
-                                                <img class="img-fluid me-2"
+                                                <img class="img-fluid2 me-2"
                                                     src="../../images/products/<?php echo $productImage2; ?>" alt=""
                                                     width="80">
                                             </a>
@@ -126,7 +126,7 @@ if ($result->num_rows > 0) {
                                             <a href="#contact-tab-pane" class="nav-link" id="contact-tab"
                                                 data-bs-toggle="tab" role="tab" aria-controls="contact-tab-pane"
                                                 aria-selected="false">
-                                                <img class="img-fluid me-2"
+                                                <img class="img-fluid2 me-2"
                                                     src="../../images/products/<?php echo $productImage3; ?>" alt=""
                                                     width="80">
                                             </a>
@@ -136,7 +136,7 @@ if ($result->num_rows > 0) {
                                         <li class="nav-item" role="presentation">
                                             <a href="#end-tab-pane" class="nav-link" id="end-tab" data-bs-toggle="tab"
                                                 role="tab" aria-controls="end-tab-pane" aria-selected="false">
-                                                <img class="img-fluid"
+                                                <img class="img-fluid2"
                                                     src="../../images/products/<?php echo $productImage4; ?>" alt=""
                                                     width="80">
                                             </a>
@@ -149,7 +149,7 @@ if ($result->num_rows > 0) {
                                 <div class="product-detail-content">
                                     <!--Product details-->
                                     <div class="new-arrival-content pr mt-md-0 mt-3">
-                                        <h4><?php echo $productName; ?></h4>
+                                        <h1><?php echo $productName; ?></h4>
                                         <div class="d-table mb-2">
                                             <p class="price float-start d-block">RM <?php echo $productPrice; ?></p>
                                         </div>

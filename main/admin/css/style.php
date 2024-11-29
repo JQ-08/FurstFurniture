@@ -840,10 +840,27 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     content: "\2014\00A0";
   }
 
-  .img-fluid {
+  .img-fluid1 {
+    /* margin: 0 0 0 33px; */
+    margin-left: 8%;
+    margin-right: 10%;
+    border: solid 3px;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .img-fluid2 {
+    border: solid 3px grey;
+    border-radius: 20px;
     max-width: 100%;
     height: auto;
-    /* object-fit: cover; */
+  }
+
+  .img-fluid {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
   }
 
   .img-thumbnail {
@@ -2634,7 +2651,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
   .eye-area {
     position: absolute;
-    top: 50px;
+    top: 49.5px;
     right: 30px;
     font-size: 15px;
   }
@@ -38575,6 +38592,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: var(--primary);
+    cursor: pointer;
   }
 
   .multi-steps>li.is-active:before,
@@ -43139,14 +43157,25 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 ===================================
     list view
 ===================================*/
+.product-detail-content {
+  margin: 30px 0 0 20px;
+}
+
   .new-arrival-content .item {
-    font-size: 12px;
+    font-size: 18px;
     color: #6e6e6e;
   }
 
-  .new-arrival-content h4,
-  .new-arrival-content .h4 {
-    font-size: 16px;
+  .new-arrival-content h2
+  {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .new-arrival-content h4
+  {
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
   }
@@ -43160,7 +43189,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     font-weight: 600;
     color: var(--primary);
     font-size: 24px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     float: right;
   }
 
@@ -43172,7 +43201,8 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   }
 
   .new-arrival-content p {
-    font-size: 14px;
+    font-size: 20px;
+    /* font-weight: 500; */
     color: #828690;
     margin-bottom: 6px;
     line-height: 24px;
