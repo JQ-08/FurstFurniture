@@ -366,7 +366,8 @@ header nav a span.material-symbols-outlined {
 
 .copyright{
   position: absolute;
-  transform: translate(480px, 272px)
+  transform: translate(480px, 272px);
+  margin-top: 20px;
 }
 
 .copyright a{

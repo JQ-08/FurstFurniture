@@ -212,6 +212,23 @@ input[type="number"] {
     border-color: grey;
     outline: none;
 }
+
+#select {
+    padding-right: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none; 
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="%23000000"><path d="M480-360 280-560h400L480-360Z"/></svg>') no-repeat right 10px center;
+    background-size: 25px; 
+    background-color: #fff; 
+    color: #000; 
+    border: 2px solid ; 
+    border-radius: 8px;
+    padding: 8px 12px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
 /* Summary */
 .summary {
     width: 48%;

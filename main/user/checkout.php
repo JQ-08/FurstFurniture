@@ -181,13 +181,13 @@ ob_end_flush();
                         <div class="box">
                             <p>Name</p>
                             <input type="text" name="name" required maxlength="50" placeholder="Ong Bin Ling"
-                                class="input">
+                                class="input" value="<?= isset($_SESSION['name']) ? htmlspecialchars($_SESSION['name']) : ''; ?>">
                             <p>Phone Number</p>
                             <input type="number" name="number" required maxlength="10" placeholder="012-34567889"
-                                class="input" min="0" max="9999999999">
+                                class="input" min="0" max="9999999999" value="<?= isset($_SESSION['number']) ? htmlspecialchars($_SESSION['number']) : ''; ?>">
                             <p>Email</p>
                             <input type="email" name="email" required maxlength="50" placeholder="example@gmail.com"
-                                class="input">
+                                class="input" value="<?= isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : ''; ?>">
                         </div>
                     </div>
                     <input type="submit" value="Continue" name="continue" class="continue-btn">

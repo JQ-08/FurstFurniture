@@ -374,7 +374,7 @@ img {
         padding: 1rem; /* Add some padding if needed */
         background-color: #f6f6f6;
         font-size: 13px;
-        margin-top: 20px;
+        margin-top: 0;
     }
 
     .footer .copyright {
