@@ -39,7 +39,7 @@ if ($userId !== null) {
     }
 
     if (isset($_POST['place_order'])) {
-        $address = filter_var($_POST['flat'] . ', ' . $_POST['street'] . ', ' . $_POST['city'] . ', ' . $_POST['country'] . ' - ' . $_POST['pin_code'], FILTER_SANITIZE_STRING);
+        $address = filter_var($_POST['flat'] . ', ' . $_POST['street'] . ', ' . $_POST['city'] . ', ' . $_POST['state'] . ', ' . $_POST['country'] . ' - ' . $_POST['pin_code'], FILTER_SANITIZE_STRING);
         $method = filter_var($_POST['method'], FILTER_SANITIZE_STRING);
 
         // Check if email is valid
@@ -180,13 +180,13 @@ ob_end_flush();
                     <div class="flex">
                         <div class="box">
                             <p>Name</p>
-                            <input type="text" name="name" required maxlength="50" placeholder="Enter your Name"
+                            <input type="text" name="name" required maxlength="50" placeholder="Ong Bin Ling"
                                 class="input">
                             <p>Phone Number</p>
-                            <input type="number" name="number" required maxlength="10" placeholder="Enter your Phone Number"
+                            <input type="number" name="number" required maxlength="10" placeholder="012-34567889"
                                 class="input" min="0" max="9999999999">
                             <p>Email</p>
-                            <input type="email" name="email" required maxlength="50" placeholder="Enter your Email"
+                            <input type="email" name="email" required maxlength="50" placeholder="example@gmail.com"
                                 class="input">
                         </div>
                     </div>
@@ -200,11 +200,12 @@ ob_end_flush();
                             <input type="text" name="flat" required placeholder="Flat/House No." class="address">
                             <input type="text" name="street" required placeholder="Street" class="address">
                             <input type="text" name="city" required placeholder="City" class="address">
+                            <input type="text" name="state" required placeholder="State" class="address">
                             <input type="text" name="country" required placeholder="Country" class="address">
                             <p>Postal Code</p>
-                            <input type="text" name="pin_code" required placeholder="Postal Code" class="address">
+                            <input type="text" name="pin_code" required placeholder="43200" class="address">
                             <p>Payment Method</p>
-                            <select name="method" class="input method" required>
+                            <select name="method" class="input method" id="select"required>
                                 <option value="credit card">Credit Card</option>
                                 <option value="cash on delivery">Cash on Delivery</option>
                             </select>

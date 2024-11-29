@@ -212,7 +212,6 @@ input[type="number"] {
     border-color: grey;
     outline: none;
 }
-
 /* Summary */
 .summary {
     width: 48%;
