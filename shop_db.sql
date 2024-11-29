@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Nov 29, 2024 at 10:54 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Host: localhost
+-- Generation Time: Nov 29, 2024 at 02:27 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,7 +40,8 @@ CREATE TABLE `cart` (
 --
 
 INSERT INTO `cart` (`id`, `userId`, `product_id`, `price`, `qty`) VALUES
-(32, 'Z0003', '771', '999', '1');
+(32, 'Z0003', '771', '999', '1'),
+(32818, 'Z0002', '754', '1750', '1');
 
 -- --------------------------------------------------------
 
@@ -121,8 +122,8 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`, `type`, `image1`, 
 (759, 'LOBERGET', 'You sit comfortably since the chair is adjustable in height.', '159', 'chair', '89Z63.png', '7Z325.png', '65Z23.png', '9287Z.png', '67 cm', '90 cm', '67 cm'),
 (760, 'VASMAN', 'VASMAN gaming chair gives your body a nice support with a synchronised seat and back tilt.', '369', 'chair', '234Z2.png', '21Z12.png', '98Z38.png', '234Z0.png', '64 cm', '70 cm', '128 cm'),
 (761, 'STRANDMON', 'Bringing new life to an old favourite. We first introduced this chair in the 1950’s.', '699', 'chair', '897Z2.png', '239Z9.png', '345Z9.png', '9843Z.png', '96 cm', '82 cm', '101 cm'),
-(771, 'GRUPPSPEL', 'A sleek, modern chair with ergonomic support, durable materials, and a minimalist design, perfect for stylish comfort in any home or office.', '999', 'chair', '65986.png', '4633Z.webp', '67331.png', '06Z13.png', '64 cm', '69 cm', '116 cm'),
-(772, 'MITTZON', 'A sleek, modern table with premium materials, ideal for dining, work, or enhancing any space with style and functionality.', '1999', 'table', '8Z837.png', '54041.avif', '75015.avif', '26695.avif', '80 cm', '160 cm', '124 cm');
+(771, 'GRUPPSPEL', 'Cool gaming chair in durable black leather. Equipped with many smart functions that allow you to adjust the back, seat, recline angle, tilt, armrests and headrest to sit really comfortably.', '999', 'chair', '65986.png', '4633Z.webp', '67331.png', '06Z13.png', '64 cm', '69 cm', '116 cm'),
+(772, 'MITTZON', 'Tactile design, clever features and possibility to set the right height during assembly – MITTZON height-selectable desk elevates your well-being and possibility to focus.', '1999', 'table', '8Z837.png', '54041.avif', '75015.avif', '26695.avif', '80 cm', '160 cm', '124 cm');
 
 -- --------------------------------------------------------
 
@@ -229,7 +230,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `pwdreset`
 --
 ALTER TABLE `pwdreset`
-  MODIFY `pwdResetId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `pwdResetId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
