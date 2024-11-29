@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2024 at 10:51 AM
+-- Generation Time: Nov 29, 2024 at 10:54 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -121,8 +121,8 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`, `type`, `image1`, 
 (759, 'LOBERGET', 'You sit comfortably since the chair is adjustable in height.', '159', 'chair', '89Z63.png', '7Z325.png', '65Z23.png', '9287Z.png', '67 cm', '90 cm', '67 cm'),
 (760, 'VASMAN', 'VASMAN gaming chair gives your body a nice support with a synchronised seat and back tilt.', '369', 'chair', '234Z2.png', '21Z12.png', '98Z38.png', '234Z0.png', '64 cm', '70 cm', '128 cm'),
 (761, 'STRANDMON', 'Bringing new life to an old favourite. We first introduced this chair in the 1950’s.', '699', 'chair', '897Z2.png', '239Z9.png', '345Z9.png', '9843Z.png', '96 cm', '82 cm', '101 cm'),
-(771, 'GRUPPSPEL', 'A sleek, modern chair with ergonomic support, durable materials, and a minimalist design, perfect for stylish comfort in any home or office.', '999', 'chair', '65986.png', '4633Z.webp', '67331.png', '06Z13.png', '64', '69', '116'),
-(772, 'MITTZON', 'A sleek, modern table with premium materials, ideal for dining, work, or enhancing any space with style and functionality.', '1999', 'table', '8Z837.png', '54041.avif', '75015.avif', '26695.avif', '80', '160', '124');
+(771, 'GRUPPSPEL', 'A sleek, modern chair with ergonomic support, durable materials, and a minimalist design, perfect for stylish comfort in any home or office.', '999', 'chair', '65986.png', '4633Z.webp', '67331.png', '06Z13.png', '64 cm', '69 cm', '116 cm'),
+(772, 'MITTZON', 'A sleek, modern table with premium materials, ideal for dining, work, or enhancing any space with style and functionality.', '1999', 'table', '8Z837.png', '54041.avif', '75015.avif', '26695.avif', '80 cm', '160 cm', '124 cm');
 
 -- --------------------------------------------------------
 
