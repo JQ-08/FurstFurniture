@@ -70,6 +70,11 @@ header nav a span.material-symbols-outlined {
     vertical-align: middle;
 }
 
+header nav a:hover, header nav a span.material-symbols-outlined:hover{
+    color: black;
+    transition: 0.3s ease;
+}
+
 /* Main */
 
 .main{

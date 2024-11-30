@@ -69,6 +69,11 @@ header nav a span.material-symbols-outlined {
     color: #333; 
     vertical-align: middle;
 }
+
+header nav a:hover, header nav a span.material-symbols-outlined:hover{
+    color: black;
+    transition: 0.3s ease;
+}
 .back-btn span{
   position: absolute;
   font-size: 40px;

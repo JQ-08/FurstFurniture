@@ -75,6 +75,7 @@ header nav a:hover, header nav a span.material-symbols-outlined:hover{
     justify-content: center;
     border: 2px solid;
     margin: 50px 0 0 275px;
+    border-radius: 20px;
 }
 
 .box h1{
