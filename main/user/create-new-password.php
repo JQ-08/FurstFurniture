@@ -68,8 +68,20 @@ include 'css/createPwd_css.php';
             <form action="includes/reset-password.inc.php" method="post">
                 <input type="hidden" name="selector" value="<?php echo $_GET["selector"]; ?>">
                 <input type="hidden" name="validator" value="<?php echo $_GET["validator"]; ?>">
+                <div class="eye-area">
+                    <div class="eye-box" onclick="Reset()">
+                        <i class="material-icons" id="eye">visibility</i>          
+                        <i class="material-icons" id="eye-slash">visibility_off</i>                  
+                    </div>
+                </div>
                 <input type="password" name="pwd" placeholder="                                  Enter a new password...">
                 <br>
+                <div class="eye-area">
+                    <div class="eye-box" onclick="Reset_2()">
+                        <i class="material-icons" id="eye-2">visibility</i>          
+                        <i class="material-icons" id="eye-slash-2">visibility_off</i>                  
+                    </div>
+                </div>
                 <input type="password" name="pwd-repeat" placeholder="                                  Repeat new password...">
                 <br>
                 <button type="submit" name="reset-password-submit">Reset password</button>
@@ -91,3 +103,37 @@ include 'css/createPwd_css.php';
 </footer>
 
 </html>
+
+<script>
+    function Reset() {
+    var eye = document.getElementById('eye');
+    var eyeSlash = document.getElementById('eye-slash');
+    var passwordField = document.querySelector('input[name="pwd"]');
+
+    if (eye.style.opacity === '1') {
+        eye.style.opacity = '0';
+        eyeSlash.style.opacity = '1';
+        passwordField.type = 'text';  
+    } else {
+        eye.style.opacity = '1';
+        eyeSlash.style.opacity = '0';
+        passwordField.type = 'password';  
+    }
+}
+
+function Reset_2() {
+    var eye = document.getElementById('eye-2');
+    var eyeSlash = document.getElementById('eye-slash-2');
+    var passwordField = document.querySelector('input[name="pwd-repeat"]');
+
+    if (eye.style.opacity === '1') {
+        eye.style.opacity = '0';
+        eyeSlash.style.opacity = '1';
+        passwordField.type = 'text'; 
+    } else {
+        eye.style.opacity = '1';
+        eyeSlash.style.opacity = '0';
+        passwordField.type = 'password';  
+    }
+}
+</script>

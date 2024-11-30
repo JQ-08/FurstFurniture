@@ -62,6 +62,19 @@ header nav a{
     font-weight: 500;  
     background-color: transparent;  
 }
+
+header nav a:hover, header nav a span.material-symbols-outlined:hover{
+    color: black;
+    transition: 0.3s ease;
+}
+header nav a span.material-symbols-outlined {
+    position: relative;
+    top: 0px; 
+    font-size: 22px; 
+    color: #555; 
+    vertical-align: middle;
+}
+
 header nav a span.material-symbols-outlined {
     position: relative;
     top: 0px; 
@@ -75,11 +88,12 @@ header nav a span.material-symbols-outlined {
     width: 1000px;
     height: 390px;
     border: solid 2px;
-    margin: 70px 0 0 175px;
+    margin: 70px 0 0 185px;
+    border-radius: 20px;
 }
 
 .content .title p {
-    margin: 15px 0 0 50px;;
+    margin: 50px 0 0 125px;;
     font-weight: 800;
     font-size: 30px;
 }
@@ -89,11 +103,11 @@ header nav a span.material-symbols-outlined {
     height: 200px;
     border-radius: 20px;
     border: solid 2px;
-    margin: 15px 0 0 50px;
+    margin: 15px 0 0 100px;
 }
 
 .details{
-    margin: 0 0 0 100px;
+    margin: 70px 0 0 100px;
 }
 
 .details .name p{
@@ -102,38 +116,35 @@ header nav a span.material-symbols-outlined {
     font-size: 40px;
 }
 
-.details .id span{
-    margin: 0 0 0 10px;
-    font-weight: 600;
-    font-size: 20px;
+.details .id {
+    display: flex;
+    margin-left: 10px;
 }
 
 .details .id p{
-    margin: 0 0 20px 100px;
+    margin: 0 0 20px 10px;
     font-weight: 400;
     font-size: 20px;
 }
 
-.details .email span{
-    margin: 0 0 0 10px;
-    font-weight: 600;
-    font-size: 20px;
+.details .email {
+    display: flex;
+    margin-left: 10px;
 }
 
 .details .email p{
-    margin: 0 0 20px 140px;
+    margin: -2px 0 20px 10px;
     font-weight: 400;
     font-size: 20px;
 }
 
-.details .pwd span{
-    margin: 0 0 0 10px;
-    font-weight: 600;
-    font-size: 20px;
+.details .pwd {
+    display: flex;
+    margin-left: 10px;
 }
 
 .details .pwd p{
-    margin: 0 0 20px 185px;
+    margin: 0 0 20px 10px;
     font-weight: 400;
     font-size: 20px;
 }
@@ -143,8 +154,37 @@ header nav a span.material-symbols-outlined {
     width: 150px;
     height: 40px;
     border-radius: 30px;
-    margin: -5px 0 0 420px;
+    margin: 10px 0 0 370px;
     cursor: pointer;
 }
 
+.details .edit button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+}
+
+
+.footer {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 1rem; 
+        background-color: #f6f6f6;
+        font-size: 13px;
+        margin-top: 0;
+    }
+
+    .footer .copyright {
+        padding: 0.9375rem;
+    }
+
+    .footer .copyright p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer .copyright a {
+        color: var(--primary);
+    }
 </style>

@@ -64,6 +64,11 @@ header nav a span.material-symbols-outlined {
     vertical-align: middle;
 }
 
+header nav a:hover, header nav a span.material-symbols-outlined:hover{
+    color: black;
+    transition: 0.3s ease;
+}
+
 .content {
     width: 800px;
     height: 300px;
@@ -86,6 +91,36 @@ header nav a span.material-symbols-outlined {
     margin: 36px;
 }
 
+.eye-area {
+    position: relative;
+    font-size: 15px;
+  }
+
+.eye-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#eye-2,
+#eye-slash-2,
+#eye,
+#eye-slash {
+    position: absolute;
+    margin: 34px 0 0 350px;
+}
+
+#eye,
+#eye-2, {
+    opacity: 1;
+}
+
+#eye-slash,
+#eye-slash-2,{
+    opacity: 0;
+}
+
 .content form input {
     width: 400px;
     height: 35px;
@@ -103,15 +138,34 @@ header nav a span.material-symbols-outlined {
     cursor: pointer;
 }
 
-.copyright p{
-    position: absolute;
-    border-bottom: none;
-    outline: none;
-    transform: translate(500px,525px);
-    color: black;
+.content form button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
 }
-.copyright a{
-    color: black;
-}
+
+.footer {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 1rem; 
+        background-color: #f6f6f6;
+        font-size: 13px;
+        margin-top: 30px;
+    }
+
+    .footer .copyright {
+        padding: 0.9375rem;
+    }
+
+    .footer .copyright p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer .copyright a {
+        color: var(--primary);
+    }
 
 </style>

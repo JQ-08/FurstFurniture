@@ -108,19 +108,33 @@ header nav a:hover, header nav a span.material-symbols-outlined:hover{
     font-size: 14;
 }
 
-.content form button{
+.content form button:hover{
     cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
 }
 
-.copyright p{
-    position: absolute;
-    border-bottom: none;
-    outline: none;
-    transform: translate(500px,525px);
-    color: black;
-}
-.copyright a{
-    color: black;
-}
+.footer {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 1rem; 
+        background-color: #f6f6f6;
+        font-size: 13px;
+        margin-top: 30px;
+    }
 
+    .footer .copyright {
+        padding: 0.9375rem;
+    }
+
+    .footer .copyright p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer .copyright a {
+        color: var(--primary);
+    }
 </style>
